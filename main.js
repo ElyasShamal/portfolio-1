@@ -11,16 +11,9 @@ window.addEventListener("resize", () => {
   }
 });
 
-menuToggle.addEventListener("click", () => {
-  if (menuToggle) {
-    const firstchild = menuToggle.firstElementChild;
-    firstchild.style.transform = "rotate(45deg) translate(10px, 5px)";
-    const secondChild = document.querySelectorAll("span")[1];
-    secondChild.style.opacity = 0;
-    const thirdChild = document.querySelectorAll("span")[2];
-    thirdChild.style.transform = transform =
-      "rotate(-45deg) translate(10px, -5px)";
-  } else {
-    menuToggle.classList.add("menu-toggle");
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  let cvBtn = document.getElementById("CV");
+  cvBtn.addEventListener("click", () => {
+    window.open("./images/Fake Resume.pdf");
+  });
 });
