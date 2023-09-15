@@ -86,8 +86,8 @@ section {
 
 .image-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: auto 0;
   border: 5px solid olivedrab;
   border-radius: 50%;
@@ -110,11 +110,74 @@ section {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
   color: olivedrab;
 }
 
+.sextion-text-p2 {
+  font-size: 1.5rem;
+}
+
+.btn-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn-info button {
+  padding: 8px 8px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-info button:nth-child(1) {
+  background-color: olivedrab;
+  color: white;
+  padding: 0px 35px;
+}
+
+.btn-info button:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-info button:nth-child(2):hover {
+  background-color: olivedrab;
+  color: white;
+}
+
+.social-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+
+.social-section i {
+  font-size: 40px;
+  color: olivedrab;
+}
+
+.social-section i:hover {
+  color: black;
+}
+/* end of profile section */
+
+/* about section */
+
+#about {
+  position: relative;
+}
+
+.section-container {
+  gap: 2rem;
+}
+/* end of about section */
+
+/* start of animation */
 .section-text {
   opacity: 0;
   transform: translateY(100px);
@@ -154,6 +217,7 @@ section {
     transform: translateX(0);
   }
 }
+/* end of animation */
 
 @media screen and (max-width: 1200px) {
   .menu-toggle {
