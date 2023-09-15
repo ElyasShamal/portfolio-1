@@ -67,6 +67,94 @@ a:hover {
   display: none;
 }
 
+/* section */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.image-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border: 5px solid olivedrab;
+  border-radius: 50%;
+  /* need to be fixed */
+}
+
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p {
+  font-weight: 600;
+}
+
+.section-text-p1 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 0.2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: olivedrab;
+}
+
+.section-text {
+  opacity: 0;
+  transform: translateY(100px);
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.image-container {
+  opacity: 0;
+  transform: translateX(100px);
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .menu-toggle {
     display: flex;
