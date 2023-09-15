@@ -170,15 +170,85 @@ section {
 
 #about {
   position: relative;
+  margin-top: 2rem;
 }
 
 .section-container {
-  gap: 2rem;
+  display: flex;
+  gap: 4rem;
 }
+
+.about-containers {
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+  height: 300px;
+  width: 300px;
+  margin-top: 2.5rem;
+}
+
+.icon-arrow {
+  height: 60px;
+  position: relative;
+  top: 4rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  border: 2px solid olivedrab;
+  border-radius: 2rem;
+  text-align: center;
+}
+
 /* end of about section */
 
+/* Skills section */
+#skills {
+  position: relative;
+}
+
+.skills-sub-title {
+  color: olivedrab;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+}
+/* end of skills section */
 /* start of animation */
-.section-text {
+/* .section-text {
   opacity: 0;
   transform: translateY(100px);
   animation-name: fadeInUp;
@@ -216,7 +286,7 @@ section {
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 /* end of animation */
 
 @media screen and (max-width: 1200px) {
