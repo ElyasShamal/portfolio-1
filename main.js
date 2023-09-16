@@ -17,3 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open("./images/Fake Resume.pdf");
   });
 });
+
+// function changeBackgroundColor() {
+//   const colors = ["white", "black"];
+//   const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//   document.body.style.backgroundColor = randomColor;
+
+//   if (randomColor === "black") {
+//     document.body.style.color = "white"; // Set text color to white when background is black
+//   } else {
+//     document.body.style.color = "black"; // Set text color to black when background is orange
+//   }
+// }
+
+// // setInterval(changeBackgroundColor, 1000);

@@ -247,8 +247,8 @@ article {
   width: 10rem;
 }
 /* end of skills section */
-/* start of animation */
-/* .section-text {
+/*start of animation */
+.section-text {
   opacity: 0;
   transform: translateY(100px);
   animation-name: fadeInUp;
@@ -286,7 +286,7 @@ article {
     opacity: 1;
     transform: translateX(0);
   }
-} */
+}
 /* end of animation */
 
 @media screen and (max-width: 1200px) {
