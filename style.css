@@ -201,7 +201,7 @@ section {
 }
 
 .icon-arrow {
-  height: 60px;
+  height: 40px;
   position: relative;
   top: 4rem;
 }
@@ -218,7 +218,6 @@ section {
   border-radius: 2rem;
   text-align: center;
 }
-
 /* end of about section */
 
 /* Skills section */
@@ -247,7 +246,14 @@ article {
   width: 10rem;
 }
 /* end of skills section */
-/*start of animation */
+
+/* project section */
+#projects {
+  position: relative;
+}
+/* end of project section */
+
+/*animation */
 .section-text {
   opacity: 0;
   transform: translateY(100px);
