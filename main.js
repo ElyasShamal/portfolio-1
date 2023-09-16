@@ -18,16 +18,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// function changeBackgroundColor() {
-//   const colors = ["white", "black"];
-//   const randomColor = colors[Math.floor(Math.random() * colors.length)];
-//   document.body.style.backgroundColor = randomColor;
+const moonSun = document.getElementById("icon");
+const body = document.body;
+const paragraphs = document.querySelectorAll("p");
+let allheading3 = document.querySelectorAll("h3");
 
-//   if (randomColor === "black") {
-//     document.body.style.color = "white"; // Set text color to white when background is black
-//   } else {
-//     document.body.style.color = "black"; // Set text color to black when background is orange
-//   }
-// }
-
-// // setInterval(changeBackgroundColor, 1000);
+moonSun.addEventListener("click", () => {
+  if (body.style.backgroundColor === "black") {
+    body.style.backgroundColor = "white";
+    moonSun.className = "fa fa-sun-o";
+    paragraphs.forEach((paragraph) => {
+      paragraph.style.color = "rgb(85, 85, 85)";
+    });
+  } else {
+    moonSun.className = "fa fa-moon-o";
+    body.style.backgroundColor = "black";
+    paragraphs.forEach((paragraph) => {
+      paragraph.style.color = "white";
+    });
+    allheading3.forEach((heading) => {
+      heading.style.color = "white";
+    });
+  }
+});
