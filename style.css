@@ -49,8 +49,7 @@ nav a {
   text-decoration: none;
 }
 
-a:hover {
-  color: black;
+nav a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: olivedrab;
@@ -161,9 +160,6 @@ section {
   color: olivedrab;
 }
 
-.social-section i:hover {
-  color: black;
-}
 /* end of profile section */
 
 /* about section */
@@ -212,7 +208,7 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   border: 2px solid olivedrab;
   border-radius: 2rem;
@@ -251,6 +247,47 @@ article {
 #projects {
   position: relative;
 }
+
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 1rem;
+}
+.project-img {
+  width: 90%;
+  height: 90%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.project-title {
+  margin: 1rem 0;
+}
+
+.sec-container {
+  height: 300px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.btn-container button {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.btn-container button a {
+  text-decoration: none;
+}
+
 /* end of project section */
 
 /*animation */
