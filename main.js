@@ -17,7 +17,6 @@ const body = document.body;
 const paragraphs = document.querySelectorAll("p");
 const allheading3 = document.querySelectorAll("h3");
 const mail = document.getElementById("mailicon");
-const mymail = document.getElementById("myemail");
 const allheading2 = document.querySelectorAll("h2");
 
 moonSun.addEventListener("click", () => {
@@ -32,7 +31,7 @@ moonSun.addEventListener("click", () => {
     });
   } else {
     mail.style.color = "white";
-    mymail.style.color = "white";
+
     moonSun.className = "fa fa-moon-o";
     body.style.backgroundColor = "black";
     paragraphs.forEach((paragraph) => {
