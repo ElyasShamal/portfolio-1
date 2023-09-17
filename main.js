@@ -1,27 +1,37 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
+// const menuToggle = document.querySelector(".menu-toggle");
+// const nav = document.querySelector("nav");
 
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("show");
-});
+// menuToggle.addEventListener("click", () => {
+//   nav.classList.toggle("show");
+// });
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 1200 && nav.classList.contains("show")) {
-    nav.classList.remove("show");
-  }
-});
+// window.addEventListener("resize", () => {
+//   if (window.innerWidth > 1200 && nav.classList.contains("show")) {
+//     nav.classList.remove("show");
+//   }
+// });
 
-document.addEventListener("DOMContentLoaded", () => {
-  let cvBtn = document.getElementById("CV");
-  cvBtn.addEventListener("click", () => {
-    window.open("./images/Fake Resume.pdf");
-  });
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   let cvBtn = document.getElementById("CV");
+//   cvBtn.addEventListener("click", () => {
+//     window.open("./images/Fake Resume.pdf");
+//   });
+// });
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
 
 const moonSun = document.getElementById("icon");
 const body = document.body;
 const paragraphs = document.querySelectorAll("p");
 const allheading3 = document.querySelectorAll("h3");
+const mail = document.getElementById("mailicon");
+const mymail = document.getElementById("myemail");
+const allheading2 = document.querySelectorAll("h2");
 
 moonSun.addEventListener("click", () => {
   if (body.style.backgroundColor === "black") {
@@ -34,6 +44,8 @@ moonSun.addEventListener("click", () => {
       paragraph.style.color = "rgb(85, 85, 85)";
     });
   } else {
+    mail.style.color = "white";
+    mymail.style.color = "white";
     moonSun.className = "fa fa-moon-o";
     body.style.backgroundColor = "black";
     paragraphs.forEach((paragraph) => {
